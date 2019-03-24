@@ -110,6 +110,15 @@ h1{
   justify-content:space-between;
   overflow: hidden;
 }
+.contentList{
+  width: auto;
+  height: 103px;
+  display: flex;
+  position: relative;
+  transition: all ease 2s;
+  left: 0;
+  right: 4800px;
+}
 .videobox2{
   width: 635px;
   height: 380px;
