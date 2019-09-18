@@ -64,8 +64,10 @@ h1{
   padding-top: 20px;
 }
 .abautus{
+  font-weight: normal;
+  font-size: 12px;
   color: white;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .bgcolor3{
   background-image: url("../images/пиано2.jpg");
@@ -90,14 +92,14 @@ h1{
   background-repeat: no-repeat;
   background-size:100%;
   width: 100%;
-  height: 715px;
+  min-height: 537px;
   padding-top:2%;
 }
 .bgvideo{
-
   background-color: rgba(220,225,235,0.05);
-  width:auto;
-  height: 96%;
+  height: auto;
+  width: 560px;
+
 }
 .videobox{
   padding-top:20px;
@@ -114,16 +116,19 @@ h1{
 }
 .contentList{
   width: auto;
-  height: 103px;
   display: flex;
   position: relative;
   transition: all ease 2s;
   left: 0;
   right: 4800px;
 }
+.videoContainer {
+  padding-bottom: 15px;
+}
 .videobox2{
   width: 100%;
   height: 100%;
+  min-height: 250px;
 }
 .txtvideo{
   margin: 0 5px;
@@ -153,25 +158,21 @@ h1{
 }
 
 
+@media (max-width: 576px) {
+  .bgvideo{
+    width: auto;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
+  .videobox {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 
 
 @media only screen and (min-width : 1200px) {
   .description{
-    margin-bottom: 100px;
-    height: 370px;
+
   }
 }
 
