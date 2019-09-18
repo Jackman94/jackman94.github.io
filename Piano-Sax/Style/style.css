@@ -162,18 +162,24 @@ h1{
   .bgvideo{
     width: auto;
   }
-
   .videobox {
     padding-right: 0;
     padding-left: 0;
+  }
+  .Pointer {
+    display: none;
+  }
+  .contentList {
+    transition: all ease 250ms;
+  }
+  .search {
+    display: none;
   }
 }
 
 
 @media only screen and (min-width : 1200px) {
-  .description{
 
-  }
 }
 
 
