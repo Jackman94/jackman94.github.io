@@ -8,6 +8,7 @@
     <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>-->
     <link href="Style/style.css" rel="stylesheet">
     <link href="Style/buttonAbautUS.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style/popUp.css">
 <!--    <script src= "./dist/bundle.js" ></script>-->
     <meta charset="UTF-8">
     <title>Pianosax</title>
@@ -35,6 +36,22 @@
       </div>
     </div>
 
+    <div class = "row justify-content-md-center">
+
+      <div class="col-md-10 col-lg-8 popUp" id="popUp">
+        <span class="closeButton" id="closePopUp" >X</span>
+        <h1>wcn</h1>
+        <h2>vrecwervwecwvrevervrev</h2>
+      </div>
+
+      <div id="backgroundPopUp"></div>
+
+
+
+    </div>
+
+
+
     <div class="row">
       <div class="col-sm-5 col-md-5 col-lg-5 description">
         <span class="title">IS EASY TO PLAY , BUT HARD TO FEEL</span>
@@ -44,12 +61,13 @@
         <div class="abautus">
           <p>Основное направление работы - музыкальное сопровождение корпоративных мероприятий,частных вечеринок, свадеби различных презентаций</p>
         </div>
-        <button type="button" class="btn btn-secondary btnAbautAS">Узнать больше</button>
+        <button type="button" class="btn btn-secondary btnAbautAS" id="button-ab-us">Узнать больше</button>
       </div>
     </div>
   </div>
 </header>
 <div class="bgcolor3">
+
   <div class="row" style="padding:15px">
     <div class="col-sm col-md col-lg globbox ">
       ccsadcsdacd
@@ -116,6 +134,7 @@
 <script src = "AddItemVideo.js"></script>
 <script src = "function.js"></script>
 <script src = "Playlist.js"></script>
+<script src = "PopUp.js"></script>
 <script src="lib/hammer.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
