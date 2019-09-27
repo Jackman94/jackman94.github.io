@@ -40,12 +40,10 @@ window.addEventListener("load", function () {
   function Getright() {
     shiftleft = shiftleft - blockContentWidth - 10;
     let width = contentlistwidth - localBoxForContent + 10;
-    console.log(width, "width");
     if(shiftleft <  - width){
       shiftleft = 0 ;
     }
     contentlist.style.left = shiftleft+"px";
-    console.log(shiftleft, 'Getright');
   }
 
   function Getleft() {
@@ -55,7 +53,6 @@ window.addEventListener("load", function () {
       shiftleft = - width;
     }
     contentlist.style.left = shiftleft + "px";
-    console.log(shiftleft, 'Getleft');
   }
 
 });

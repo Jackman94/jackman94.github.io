@@ -9,6 +9,7 @@
     <link href="Style/style.css" rel="stylesheet">
     <link href="Style/buttonAbautUS.css" rel="stylesheet">
     <link rel="stylesheet" href="Style/popUp.css">
+    <link rel="stylesheet" href="Style/photogalery.css">
 <!--    <script src= "./dist/bundle.js" ></script>-->
     <meta charset="UTF-8">
     <title>Pianosax</title>
@@ -23,35 +24,34 @@
   </div>
   </div>
 
-<header class="bgcolor2">
+  <header class="bgcolor2">
+
+
+  <div class = "row justify-content-md-center">
+
+    <div class="col-md-10 col-lg-8 popUp" id="popUp">
+      <span class="closeButton" id="closePopUp" >X</span>
+      <h1>wcn</h1>
+      <h2>vrecwervwecwvrevervrev</h2>
+    </div>
+
+    <div id="backgroundPopUp"></div>
+
+  </div>
+
+
   <div class="bgsize">
+    <a name="about"></a>
     <div class="row">
       <div class="search">
       <div id = "avatar" class="col-sm-6 col-md-6 col-lg-6 search row">
-        <div class="col-md-2 offset-1 headmenu"><div class="down"> О НАС</div></div>
-        <div class="col-md-3 headmenu"><div class="down"> Что мы делаем</div> </div>
-        <div class="col-md-3 headmenu"><div class="down">Промо</div></div>
-        <div class="col-md-3 headmenu"><div class="down">Контакты</div></div>
+        <div class="col-md-2 offset-1 headmenu"><a href="#about"><div class="down"> О НАС</div></a></div>
+        <div class="col-md-3 headmenu"><a href="#description"><div class="down"> Что мы делаем</div></a></div>
+        <div class="col-md-3 headmenu"><a href="#video"><div class="down">Промо</div></a></div>
+        <div class="col-md-3 headmenu"><a href="#Kontact"><div class="down">Контакты</div></a></div>
       </div>
       </div>
     </div>
-
-    <div class = "row justify-content-md-center">
-
-      <div class="col-md-10 col-lg-8 popUp" id="popUp">
-        <span class="closeButton" id="closePopUp" >X</span>
-        <h1>wcn</h1>
-        <h2>vrecwervwecwvrevervrev</h2>
-      </div>
-
-      <div id="backgroundPopUp"></div>
-
-
-
-    </div>
-
-
-
     <div class="row">
       <div class="col-sm-5 col-md-5 col-lg-5 description">
         <span class="title">IS EASY TO PLAY , BUT HARD TO FEEL</span>
@@ -66,8 +66,9 @@
     </div>
   </div>
 </header>
-<div class="bgcolor3">
 
+  <div class="bgcolor3">
+  <a name="description"></a>
   <div class="row" style="padding:15px">
     <div class="col-sm col-md col-lg globbox ">
       ccsadcsdacd
@@ -79,7 +80,8 @@
   </div>
 </div>
 
-<div class="bgcolor4">
+  <div class="bgcolor4">
+  <a name="video"></a>
   <div class="col-lg bgvideo">
     <div class="videobox">
       <iframe id = "replacementvideo" class="videobox2" src="https://www.youtube.com/embed/mmNqjdNtrrU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -102,6 +104,48 @@
 
   </div>
 </div>
+
+  <div class="bgcolor5">
+    <div class="row">
+      <div class="col-md-5 order-2 order-md-1">
+
+       <div class="row heightgalery">
+         <div class="col-4 col-md-6 photogalery">
+           <img src="http://www.lumiere-mag.ru/wp-content/uploads/2017/05/the_pianist_cover.jpg" alt="sorry">
+         </div>
+         <div class="col-4 col-md-6 photogalery">
+           <img src="https://cs8.pikabu.ru/post_img/big/2017/12/21/0/1513804837187662063.jpg" alt="sorry">
+         </div>
+         <div class="col-4 col-md-6 photogalery">
+           <img src="https://storage.concert.ua/Jvv/29/OV/5cee54f25f7ef/f838.jpg:31-eventpage-gallery_main-desktop" alt="sorry">
+         </div>
+         <div class="col-4 col-md-6 photogalery">
+           <img src="https://34.ua/uploads/696x391_DIR/imported_news/2014/04/b08f1fcfb15b7407f0611fd078a7170940097c6e.jpg" alt="sorry">
+         </div>
+         <div class="col-4 col-md-6 photogalery">
+           <img src="https://s.061.ua/section/newsInternalIcon/upload/images/news/icon/000/050/229/img2481_5c17a5c4c902d.jpg" alt="sorry">
+         </div>
+         <div class="col-4 col-md-6 photogalery">
+           <img src="https://ponominalu.ru/media/in/640x342/91fe18426d8e00852bfef12c24213b862d672913.jpg" alt="sorry">
+         </div>
+       </div>
+
+      </div>
+      <div class="col-md-7 order-1">
+        <div class="row">
+          <div class="col-1 col-md-1 arrow"> < </div>
+          <div class="col-10 col-md-10 photobox">
+            <img class="img-fluid" src="https://cs8.pikabu.ru/post_img/big/2017/12/21/0/1513804837187662063.jpg" alt="sorry">
+          </div>
+          <div class="col-1 col-md-1 arrow"> > </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 
 
 

@@ -1,6 +1,15 @@
 body{
   background-color: black;
 }
+a {
+  color: white;
+  text-decoration:none;
+}
+a :hover {
+  color: black;
+  text-decoration:none;
+}
+
 .bgcolor1{
   background-color: rgba(30,30,30,255);
   width: 100%;
@@ -29,17 +38,20 @@ body{
   /*background-color: rgba(51,108,153,0.2);*/
 }
 .headmenu{
-  color: white;
+  color: white !important;
   text-align: center;
-  font-family: "Baskerville Old Face";
   font-weight: bold;
 }
 .headmenu:hover{
   background-color:rgba(244,247,255,255);
-  color: black;
+  color: black !important;
 }
 .down{
-  margin-top: 40px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .description{
   background-color: rgba(222,225,235,0.2);
