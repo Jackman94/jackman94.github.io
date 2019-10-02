@@ -10,6 +10,13 @@ a :hover {
   text-decoration:none;
 }
 
+hr {
+  height: 5px;
+  width: 90px;
+  background-color: rgba(222,225,235,0.2);
+  display: none;
+}
+
 .bgcolor1{
   background-color: rgba(30,30,30,255);
   width: 100%;
@@ -75,30 +82,11 @@ a :hover {
   color: white;
   margin-top: 10px;
 }
-.bgcolor3{
-  background-image: url("../images/пиано2.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;
-  width: 100%;
-}
-.globbox{
-  min-height: 100px;
-  background-color:rgba(222,225,235,0.2);
-  color:white;
-  padding: 10px;
-  margin-top:35px;
-  margin-left: 1%;
-  margin-right: 1%;
-  text-align: center;
-}
-
-
 .bgcolor4{
   background-image: url("../images/bgpiano.jpg");
   background-repeat: no-repeat;
   background-size:100%;
   width: 100%;
-  min-height: 537px;
   padding-top:2%;
 }
 .bgvideo{
@@ -126,7 +114,7 @@ a :hover {
   position: relative;
   transition: all ease 2s;
   left: 0;
-  right: 4800px;
+  /*right: 4800px;*/
 }
 .videoContainer {
   padding-bottom: 15px;
@@ -160,28 +148,64 @@ a :hover {
   background-color: rgba(222,225,235,0.2);
   font-size: 20px;
 }
-.headPictures{
-  min-height: 513px;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 576px) {
-  .bgvideo{
-    width: auto;
+.bgvideo{
+width: auto;
+}
+.videobox {
+padding-right: 0;
+padding-left: 0;
+}
+.Pointer {
+display: none;
+}
+.contentList {
+transition: all ease 250ms;
+}
+.search {
+display: none;
+}
+.bgcolor2 {
+background-size: 590px;
+background-position: right top;
+}
+.bgsize {
+margin-top: 315px;
+}
+.description {
+margin-bottom: 0;
+}
+
+
+
+/*logo mobile*/
+  .al-center img {
+    width: 46px;
+    height: 56px;
   }
-  .videobox {
-    padding-right: 0;
-    padding-left: 0;
+  .al-center {
+    margin: 10px 0;
   }
-  .Pointer {
-    display: none;
+
+  /*hr line*/
+  hr {
+    margin: 60px auto;
+    display: block;
   }
-  .contentList {
-    transition: all ease 250ms;
-  }
-  .search {
-    display: none;
-  }
+
+
 }
 
 

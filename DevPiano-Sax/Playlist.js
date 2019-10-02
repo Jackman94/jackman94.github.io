@@ -14,16 +14,20 @@ window.addEventListener("load", function () {
   let localBoxForContent = document.getElementById("posvideo").offsetWidth;
   // let videoitems = document.getElementById("txtvideo");
 
-  console.log(setInterval(contentlistwidth,100));
   console.log(contentlistwidth, "contentlistwidth");
     console.log(blockContentWidth, "blockContentWidth");
-    console.log(localBoxForContent, "localBoxForContent");
+    console.log(document.body.offsetWidth < 576 , "document.body.offsetWidth");
 
 
   leftbutton.addEventListener("click" , Getleft);
   rightbutton.addEventListener("click" , Getright);
 
   let shiftleft = 0;
+
+  if (document.body.offsetWidth < 576) {
+    contentlistwidth = contentlistwidth + 60;
+    console.log(contentlistwidth,"cecoiwehcoewcewwidth")
+  }
 
   var mc = new Hammer(contentlist);
 
@@ -43,7 +47,7 @@ window.addEventListener("load", function () {
     if(shiftleft <  - width){
       shiftleft = 0 ;
     }
-    contentlist.style.left = shiftleft+"px";
+      contentlist.style.left = shiftleft+"px";
   }
 
   function Getleft() {
@@ -54,6 +58,8 @@ window.addEventListener("load", function () {
     }
     contentlist.style.left = shiftleft + "px";
   }
+
+
 
 });
 }

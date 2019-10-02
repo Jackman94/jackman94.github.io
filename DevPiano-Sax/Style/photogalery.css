@@ -1,5 +1,5 @@
 .bgcolor5 {
-margin-top: 15px;
+margin-top: 60px;
 }
 .photogalery {
     width: 100%;
@@ -20,9 +20,13 @@ margin-top: 15px;
 .arrow {
     display: flex;
     align-items: center;
+    justify-content: center;
     color: white;
     font-size: xx-large;
     font-weight: bold;
+}
+.arrow:hover {
+    background-color: rgba(222,225,235,0.2);
 }
 .heightgalery {
     height: 550px;
@@ -34,5 +38,8 @@ margin-top: 15px;
 @media (max-width: 576px) {
     .heightgalery {
         height: auto;
+    }
+    .bgcolor5 {
+        margin-top: 0;
     }
 }
