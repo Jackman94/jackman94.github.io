@@ -29,13 +29,11 @@ function loadGalery() {
         // console.log(index, "index");
         // console.log(array, "array");
             let value = currentValue;
-            debugger
             let acc = currentValue;
             console.log(acc);
             addPicture(acc);
         });
         function addPicture(acc) {
-            debugger
             mainPictureGallery.src = acc;
         }
         // mainPictureGallery.src = "https://34.ua/uploads/696x391_DIR/imported_news/2014/04/b08f1fcfb15b7407f0611fd078a7170940097c6e.jpg"
