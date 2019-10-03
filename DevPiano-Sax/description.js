@@ -1,39 +1,59 @@
-let descriptioninlineblock = document.getElementsByClassName("descriptioninlineblock")[0];
-let descriptioninlineblockWidth =document.getElementsByClassName("descriptioninlineblock")[0].offsetWidth;
-let leftArrowDescription = document.getElementById("leftArrowDescription");
-let rightArrowDescription = document.getElementById("rightArrowDescription");
-let globbox = document.getElementsByClassName("globbox")[0].offsetWidth;
-console.log(globbox,"globbox");
-leftArrowDescription.addEventListener("click", leftPush);
-rightArrowDescription.addEventListener("click", rightPush);
+document.cookie = 'same-site-cookie=foo; SameSite=Lax';
+document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
 
-if (document.body.offsetWidth < 576) {
-    descriptioninlineblock.className = "descriptioninlineblock col-10"
-}else {
-    descriptioninlineblock.className = "descriptioninlineblock"
-}
+window.addEventListener("load", loadWhatwedo);
 
-let shiftleftdeck = 0;
+   function loadWhatwedo () {
+    let descriptioninlineblock = document.getElementsByClassName("descriptioninlineblock")[0];
+    let whatWeDo = document.getElementById("whatWeDo");
+    let buttonWhatwedo = document.getElementById("leftArrowDescription").offsetWidth;
+    let leftArrowDescription = document.getElementById("leftArrowDescription");
+    let rightArrowDescription = document.getElementById("rightArrowDescription");
+    let globbox = document.getElementsByClassName("globbox")[0].offsetWidth;
 
+    leftArrowDescription.addEventListener("click", leftPush);
+    rightArrowDescription.addEventListener("click", rightPush);
 
-function leftPush() {
-    shiftleftdeck = shiftleftdeck + globbox -84;
-    let widthcontent = 4 * globbox + +10 - (84 * 4);
-    if (shiftleftdeck > 0) {
-        shiftleftdeck = -widthcontent;
+    if (document.body.offsetWidth < 576) {
+        descriptioninlineblock.className = "descriptioninlineblock col-10"
+    } else {
+        descriptioninlineblock.className = "descriptioninlineblock"
     }
-    console.log(shiftleftdeck, "left");
-    descriptioninlineblock.style.left = shiftleftdeck + "px";
 
-}
+    let shiftleftdeck = 0;
+    let boxwidth = globbox - (2 * buttonWhatwedo) - 22;
+    let widthcontent = 3 * boxwidth;
 
-function rightPush() {
-    shiftleftdeck = shiftleftdeck - globbox + 84;
 
-    let widthcontent = 4 * globbox + +10 ;
-    if (shiftleftdeck < -widthcontent) {
-        shiftleftdeck = 0
+       var mc = new Hammer(whatWeDo);
+
+       mc.on("swipeleft swiperight",function (event) {
+
+           if(event.type === "swipeleft") {
+               rightPush ();
+           }
+           else{
+               leftPush();
+           }
+       });
+
+
+    function leftPush() {
+        shiftleftdeck = shiftleftdeck + boxwidth;
+
+        if (shiftleftdeck > 0) {
+            shiftleftdeck = -widthcontent;
+        }
+        descriptioninlineblock.style.left = shiftleftdeck + "px";
+
     }
-    console.log(shiftleftdeck, "right");
-    descriptioninlineblock.style.left = shiftleftdeck + "px";
+
+    function rightPush() {
+        shiftleftdeck = shiftleftdeck - boxwidth;
+
+        if (shiftleftdeck < -widthcontent) {
+            shiftleftdeck = 0
+        }
+        descriptioninlineblock.style.left = shiftleftdeck + "px";
+    }
 }

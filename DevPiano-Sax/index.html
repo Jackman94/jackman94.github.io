@@ -73,7 +73,7 @@
   <a name="description"></a>
   <div class="bgcolor3 row">
     <div class="col-1 arrow arrow-hidden" id="leftArrowDescription"><</div>
-    <div class="descriptioninlineblock">
+    <div id="whatWeDo" class="descriptioninlineblock">
       <div class="col-12 col-md-3 globbox ">
         <h3>Wedding</h3>
         <p>Свободное от терминологической строгости понятие, употребляемое, в зависимости от контекста, в различных значениях, имеющее вполне определённый исторический смысл и менее определённый оценочный. В разговорном языке понятие «классическая музыка» часто используется как синоним музыки «академической» или «симфонической».</p>
@@ -163,11 +163,11 @@
       </div>
       <div class="col-md-7 order-1">
         <div class="row">
-          <div class="col-1 col-md-1 arrow"> < </div>
+          <div class="col-1 col-md-1 arrow" id="leftPhotoGalery"> < </div>
           <div class="col-10 col-md-10 photobox">
-            <img class="img-fluid" src="https://cs8.pikabu.ru/post_img/big/2017/12/21/0/1513804837187662063.jpg" alt="sorry">
+            <img id="mainPictureGallery" class="img-fluid" src="https://cs8.pikabu.ru/post_img/big/2017/12/21/0/1513804837187662063.jpg" alt="sorry">
           </div>
-          <div class="col-1 col-md-1 arrow"> > </div>
+          <div class="col-1 col-md-1 arrow" id="rightPhotoGalery"> > </div>
         </div>
       </div>
     </div>
@@ -193,13 +193,14 @@
 
 
 
-
+<script src="lib/hammer.min.js"></script>
 <script src = "AddItemVideo.js"></script>
 <script src = "function.js"></script>
 <script src = "Playlist.js"></script>
 <script src = "PopUp.js"></script>
 <script src = "description.js"></script>
-<script src="lib/hammer.min.js"></script>
+<script src="photogalery.js"></script>
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

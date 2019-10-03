@@ -14,10 +14,6 @@ window.addEventListener("load", function () {
   let localBoxForContent = document.getElementById("posvideo").offsetWidth;
   // let videoitems = document.getElementById("txtvideo");
 
-  console.log(contentlistwidth, "contentlistwidth");
-    console.log(blockContentWidth, "blockContentWidth");
-    console.log(document.body.offsetWidth < 576 , "document.body.offsetWidth");
-
 
   leftbutton.addEventListener("click" , Getleft);
   rightbutton.addEventListener("click" , Getright);
@@ -26,7 +22,6 @@ window.addEventListener("load", function () {
 
   if (document.body.offsetWidth < 576) {
     contentlistwidth = contentlistwidth + 60;
-    console.log(contentlistwidth,"cecoiwehcoewcewwidth")
   }
 
   var mc = new Hammer(contentlist);

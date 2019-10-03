@@ -9,7 +9,7 @@
     width: 93%;
     display: flex;
     position: relative;
-    /*transition: all ease 2s;*/
+    transition: all ease 2s;
     left: 0;
     right: 4800px;
 }
