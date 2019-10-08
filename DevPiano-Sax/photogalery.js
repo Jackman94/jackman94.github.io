@@ -27,26 +27,40 @@ function loadGalery() {
             "https://i.pinimg.com/originals/a7/74/ca/a774ca5d1e5d23dd30f618ffb477159d.jpg" ,
         ];
 
-
-    let revert = arr.reverse();
-    console.log(revert);
+    let res = null;
 
     function moveImageLeft() {
+        var revert = arr.reverse();
 
         for (let i = 0; i <revert.length; i++){
+
+            if(arr[i] === res) {
+                arr.push(arr[i]);
+                arr.shift();
+            }
+
             if(revert[i] ) {
-                mainPictureGallery.src = revert[i];
+                res = mainPictureGallery.src = revert[i];
                 revert.push(revert[i]);
                 revert.shift();
                 break;
             }
         }
+        revert.reverse();
+
     }
+
 
     function moveImageRight() {
         for (let i = 0; i <arr.length; i++){
-            if(arr[i] ) {
-                mainPictureGallery.src = arr[i];
+
+            if(arr[i] === res) {
+                arr.push(arr[i]);
+                arr.shift();
+            }
+
+            if(arr[i]) {
+                res = mainPictureGallery.src = arr[i];
                 arr.push(arr[i]);
                 arr.shift();
                 break;
