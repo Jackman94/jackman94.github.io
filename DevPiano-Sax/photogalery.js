@@ -4,9 +4,12 @@ function loadGalery() {
     let leftPhotoGalery = document.getElementById("leftPhotoGalery");
     let rightPhotoGalery = document.getElementById("rightPhotoGalery");
     let mainPictureGallery = document.getElementById("mainPictureGallery");
+    let galleryBlock = document.getElementById("galleryBlock");
+    let photoBox =document.getElementsByClassName("photobox")[0];
 
     leftPhotoGalery.addEventListener("click", moveImageLeft);
     rightPhotoGalery.addEventListener("click", moveImageRight);
+    galleryBlock.addEventListener("click", clickPhoto);
 
     let arr =
         [
@@ -26,10 +29,44 @@ function loadGalery() {
             "http://zabavnik.club/wp-content/uploads/cifra_8_1_01074502.jpg",
             "https://i.pinimg.com/originals/a7/74/ca/a774ca5d1e5d23dd30f618ffb477159d.jpg" ,
         ];
+    console.log(arr, "array private");
+
+    // let xhr = new XMLHttpRequest();
+    // xhr.open("GET", 'jsonobj/photoGalery.json');
+    // xhr.send();
+    // xhr.contentType = "json";
+    // xhr.onload = function() {
+    //     if (xhr.status != 200){
+    //         console.log(`${xhr.status} : ${xhr.statusText}`)
+    //     }
+    //     else {
+    //         let res = xhr.response;
+    //         let arr = JSON.parse(res);
+    //         console.log(res,"res");
+    //         console.log(arr, "arr");
+    //         moveImageLeft(arr);
+    //         moveImageRight(arr)
+    //
+    //     }
+    // };
+
+
+    var mc = new Hammer(photoBox);
+
+    mc.on("swipeleft swiperight",function (event) {
+
+        if(event.type === "swipeleft") {
+            moveImageRight ();
+        }
+        else{
+            moveImageLeft();
+        }
+    });
 
     let res = null;
 
     function moveImageLeft() {
+        console.log(arr , "arrr inmoveImageLeft");
         var revert = arr.reverse();
 
         for (let i = 0; i <revert.length; i++){
@@ -65,6 +102,14 @@ function loadGalery() {
                 arr.shift();
                 break;
             }
+        }
+    }
+
+    function clickPhoto(event) {
+        if (event.target.tagName === 'IMG') {
+            let target = event.target;
+            let imgTarget = target.src;
+            mainPictureGallery.src = imgTarget;
         }
     }
 }

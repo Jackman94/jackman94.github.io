@@ -1,5 +1,7 @@
 body{
   background-color: black;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 100
 }
 a {
   color: white;
@@ -39,9 +41,10 @@ hr {
   overflow: hidden;
 }
 .search{
+  font-family: "UnitypeXCnd-Light";
   height: 100px;
   width: 100%;
-  z-index: 90000;
+  z-index: 9000;
   /*background-color: rgba(51,108,153,0.2);*/
 }
 .headmenu{
@@ -69,6 +72,7 @@ hr {
   margin-bottom: 50px;
 }
 .title{
+  font-family: 'Poiret One', cursive;
   color:white;
   font-size: 28px;
   text-align: center;
@@ -78,7 +82,7 @@ hr {
 }
 .abautus{
   font-weight: normal;
-  font-size: 12px;
+  font-size: 15px;
   color: white;
   margin-top: 10px;
 }

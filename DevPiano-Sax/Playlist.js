@@ -11,8 +11,7 @@ window.addEventListener("load", function () {
   let contentlist = document.getElementById("contentList");
   let contentlistwidth = document.getElementById("contentList").offsetWidth;
   let blockContentWidth = document.getElementById("txtvideo").offsetWidth;
-  let localBoxForContent = document.getElementById("posvideo").offsetWidth;
-  // let videoitems = document.getElementById("txtvideo");
+  let localBoxForContent = document.getElementById("posvideo").offsetWidth
 
 
   leftbutton.addEventListener("click" , Getleft);
