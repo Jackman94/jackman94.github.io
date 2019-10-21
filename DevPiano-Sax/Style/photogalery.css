@@ -4,6 +4,9 @@ margin-top: 60px;
 .photogalery {
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .photogalery img {
     padding: 10px;
