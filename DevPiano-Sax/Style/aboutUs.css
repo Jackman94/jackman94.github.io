@@ -11,7 +11,7 @@
     position: relative;
     transition: all ease 2s;
     left: 0;
-    right: 4800px;
+    margin-left: 5px;
 }
 .globbox{
     min-height: 100px;
@@ -46,6 +46,7 @@
 @media (max-width: 576px) {
     .descriptioninlineblock {
         width: 100%;
+        margin-left: 0;
 
     }
     .bgcolor3{
@@ -59,6 +60,7 @@
     .globbox {
         background-color:black;
     }
+    .galleryblock {}
 }
 
 

@@ -13,21 +13,23 @@ function loadGalery() {
 
     let arr =
         [
-            "http://www.lumiere-mag.ru/wp-content/uploads/2017/05/the_pianist_cover.jpg",
-            "https://34.ua/uploads/696x391_DIR/imported_news/2014/04/b08f1fcfb15b7407f0611fd078a7170940097c6e.jpg",
-            "https://ponominalu.ru/media/in/640x342/91fe18426d8e00852bfef12c24213b862d672913.jpg",
-            "http://www.lumiere-mag.ru/wp-content/uploads/2017/05/the_pianist_cover.jpg",
-            "https://34.ua/uploads/696x391_DIR/imported_news/2014/04/b08f1fcfb15b7407f0611fd078a7170940097c6e.jpg",
-            "https://ponominalu.ru/media/in/640x342/91fe18426d8e00852bfef12c24213b862d672913.jpg",
-            "https://i.pinimg.com/originals/e1/31/ab/e131ab5cddb75417d7e43fd6b838a332.jpg",
-            "https://i.pinimg.com/originals/0a/70/f3/0a70f3070112506446873a30e5911c1c.jpg",
-            "https://pro-prikoly.club/wp-content/uploads/2019/07/0-33.jpg",
-            "http://steshka.ru/wp-content/uploads/2015/02/cifra_4_9.jpg",
-            "http://rukadelkino.ru/uploads/posts/2016-03/thumbs/1457418118_2-g.jpg",
-            "https://ja-rastu.ru/uploads/posts/2013-04/1367310704_shest.gif",
-            "https://i.pinimg.com/originals/26/ba/10/26ba105d7a933be46940c9e943a3064d.jpg",
-            "http://zabavnik.club/wp-content/uploads/cifra_8_1_01074502.jpg",
-            "https://i.pinimg.com/originals/a7/74/ca/a774ca5d1e5d23dd30f618ffb477159d.jpg" ,
+            "./images/13957996_1819867424913757_2536908119237949828_o.jpg",
+            "./images/54434912_2219933258121974_366147302013796352_n.jpg",
+            "./images/IMG_4683-2.jpg",
+            "./images/IMG_4684-2.jpg",
+            "./images/IMG_4688-2.jpg",
+            "./images/IMG_4692-2.jpg",
+            "./images/IMG_4803-2.jpg",
+            "./images/ol10998369.jpg",
+            "./images/ol10998370.jpg",
+            "./images/ol10998371.jpg",
+            "./images/ol11013439.jpg",
+            "./images/ol11013440.jpg",
+            "./images/ol11049928.jpg",
+            "./images/ol11049929.jpg",
+            "./images/ol11049930.jpg" ,
+            "./images/ol11050121.jpg" ,
+            "./images/PRyJg654tbA.jpg" ,
         ];
     console.log(arr, "array private");
 
