@@ -4,8 +4,10 @@
   <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>-->
-    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>-->
+
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
@@ -19,6 +21,7 @@
     <link rel="stylesheet" href="Style/photogalery.css">
     <link rel="stylesheet" href="Style/aboutUs.css">
     <link rel="stylesheet" href="Style/Kontact.css">
+    <link rel="stylesheet" href="Style/slider.css">
 <!--    <script src= "./dist/bundle.js" ></script>-->
     <meta charset="UTF-8">
     <title>Pianosax</title>
@@ -145,37 +148,42 @@
 
   <div class="bgcolor5">
     <div class="row">
-      <div class="col-md-5 order-2 order-md-1">
+      <div class="col-md-3 order-2 order-md-1">
 
-       <div class="row heightgalery" id="galleryBlock">
-         <div class="col-6 col-md-6 photogalery">
-           <img src="./images/ol10998371.jpg" alt="sorry">
-         </div>
-         <div class="col-6 col-md-6 photogalery">
-           <img src="./images/ol11013440.jpg" alt="sorry">
-         </div>
-         <div class="col-6 col-md-6 photogalery">
-           <img src="https://storage.concert.ua/Jvv/29/OV/5cee54f25f7ef/f838.jpg:31-eventpage-gallery_main-desktop" alt="sorry">
-         </div>
-         <div class="col-6 col-md-6 photogalery">
-           <img src="./images/saxofonist.jpg" alt="sorry" class="stretch">
-         </div>
-         <div class="col-6 col-md-6 photogalery">
-           <img src="./images/PRyJg654tbA.jpg" alt="sorry">
-         </div>
-         <div class="col-6 col-md-6 photogalery">
-           <img src="https://ponominalu.ru/media/in/640x342/91fe18426d8e00852bfef12c24213b862d672913.jpg" alt="sorry">
-         </div>
-       </div>
+
+        <div class="swiper-container nav-slider loading">
+          <div class="swiper-wrapper" role="navigation"></div>
+        </div>
+
+<!--       <div class="row heightgalery" id="galleryBlock">-->
+<!--         <div class="col-6 col-md-6 photogalery">-->
+<!--           <img src="./images/ol10998371.jpg" alt="sorry">-->
+<!--         </div>-->
+<!--         <div class="col-6 col-md-6 photogalery">-->
+<!--           <img src="./images/ol11013440.jpg" alt="sorry">-->
+<!--         </div>-->
+<!--         <div class="col-6 col-md-6 photogalery">-->
+<!--           <img src="https://storage.concert.ua/Jvv/29/OV/5cee54f25f7ef/f838.jpg:31-eventpage-gallery_main-desktop" alt="sorry">-->
+<!--         </div>-->
+<!--         <div class="col-6 col-md-6 photogalery">-->
+<!--           <img src="./images/saxofonist.jpg" alt="sorry" class="stretch">-->
+<!--         </div>-->
+<!--         <div class="col-6 col-md-6 photogalery">-->
+<!--           <img src="./images/PRyJg654tbA.jpg" alt="sorry">-->
+<!--         </div>-->
+<!--         <div class="col-6 col-md-6 photogalery">-->
+<!--           <img src="https://ponominalu.ru/media/in/640x342/91fe18426d8e00852bfef12c24213b862d672913.jpg" alt="sorry">-->
+<!--         </div>-->
+<!--       </div>-->
 
       </div>
-      <div class="col-md-7 order-1">
-        <div class="row">
-          <div class="col-1 col-md-1 arrow" id="leftPhotoGalery"> < </div>
-          <div class="col-10 col-md-10 photobox">
-            <img id="mainPictureGallery" class="img-fluid" src="https://cs8.pikabu.ru/post_img/big/2017/12/21/0/1513804837187662063.jpg" alt="sorry">
+      <div class="col-md-9 order-1">
+        <div class="swiper-container main-slider loading">
+          <div class="swiper-wrapper">
           </div>
-          <div class="col-1 col-md-1 arrow" id="rightPhotoGalery"> > </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev swiper-button-white"></div>
+          <div class="swiper-button-next swiper-button-white"></div>
         </div>
       </div>
     </div>
@@ -256,5 +264,9 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<!--Slider-->
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 </body>
 </html>
