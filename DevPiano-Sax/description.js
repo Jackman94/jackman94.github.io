@@ -29,10 +29,10 @@ window.addEventListener("load", loadWhatwedo);
 
        mc.on("swipeleft swiperight",function (event) {
 
-           if(event.type === "swipeleft") {
+           if(event.type === "swipeleft" && document.body.offsetWidth <= 576) {
                rightPush ();
            }
-           else{
+           else if (document.body.offsetWidth <= 576){
                leftPush();
            }
        });

@@ -136,9 +136,11 @@ hr {
 .txtvideo_img{
   width: 150px;
   height: 115px;
+  display: inline-block;
 }
 .txtvideo_txt{
   color:white;
+  width: 150px;
 }
 .Pointer{
   width: 35px;
@@ -151,6 +153,11 @@ hr {
 .Pointer:hover{
   background-color: rgba(222,225,235,0.2);
   font-size: 20px;
+}
+
+.listVideo-slider {
+  width: 94% !important;
+  height: auto!important;
 }
 
 

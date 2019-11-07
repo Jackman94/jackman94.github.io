@@ -18,6 +18,7 @@
 .swiper-container.nav-slider {
 
     padding-left: 5px;
+    width: 100%;
 }
 .swiper-container.nav-slider .swiper-slide {
     cursor: pointer;
@@ -61,4 +62,13 @@
 }
 .swiper-button-next {
     transform: translateX(-50px);
+}
+
+
+
+
+@media (max-width: 576px) {
+    .nav-hidden {
+        display: none;
+    }
 }

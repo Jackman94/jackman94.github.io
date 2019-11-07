@@ -41,6 +41,12 @@ margin-top: 60px;
     width: 100%;
     height: auto !important;
 }
+.title-PhotoGallery {
+    display: none;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
 
 
 
@@ -59,5 +65,8 @@ margin-top: 60px;
     }
     .photogalery {
         padding: 7px;
+    }
+    .title-PhotoGallery {
+        display: block;
     }
 }

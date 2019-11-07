@@ -129,16 +129,33 @@
 
 
     <div class="row videoContainer">
-    <div id = "leftbutton" class="Pointer"><</div>
+<!--    <div id = "leftbutton" class="Pointer"><</div>-->
 
       <div id = "posvideo" class="col-sm col-md col-lg posvideo">
 
-        <div id="contentList" class="contentList">
+
+
+
+          <div class="listVideo-slider swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="swiper-contentList">
+              <!-- Slides -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+
 
         </div>
-    </div>
 
-    <div id ="rightbutton" class="Pointer">></div>
+<!--    <div id ="rightbutton" class="Pointer">></div>-->
   </div>
 
   </div>
@@ -147,39 +164,18 @@
   <hr>
 
   <div class="bgcolor5">
+    <h2 class="title-PhotoGallery">Photo Gallery</h2>
     <div class="row">
-      <div class="col-md-3 order-2 order-md-1">
-
+      <div class="col-md-3 order-2 order-md-1 nav-hidden">
 
         <div class="swiper-container nav-slider loading">
-          <div class="swiper-wrapper" role="navigation"></div>
+          <div class="swiper-wrapper" role="navigation" id="swiper-wrapperId"></div>
         </div>
-
-<!--       <div class="row heightgalery" id="galleryBlock">-->
-<!--         <div class="col-6 col-md-6 photogalery">-->
-<!--           <img src="./images/ol10998371.jpg" alt="sorry">-->
-<!--         </div>-->
-<!--         <div class="col-6 col-md-6 photogalery">-->
-<!--           <img src="./images/ol11013440.jpg" alt="sorry">-->
-<!--         </div>-->
-<!--         <div class="col-6 col-md-6 photogalery">-->
-<!--           <img src="https://storage.concert.ua/Jvv/29/OV/5cee54f25f7ef/f838.jpg:31-eventpage-gallery_main-desktop" alt="sorry">-->
-<!--         </div>-->
-<!--         <div class="col-6 col-md-6 photogalery">-->
-<!--           <img src="./images/saxofonist.jpg" alt="sorry" class="stretch">-->
-<!--         </div>-->
-<!--         <div class="col-6 col-md-6 photogalery">-->
-<!--           <img src="./images/PRyJg654tbA.jpg" alt="sorry">-->
-<!--         </div>-->
-<!--         <div class="col-6 col-md-6 photogalery">-->
-<!--           <img src="https://ponominalu.ru/media/in/640x342/91fe18426d8e00852bfef12c24213b862d672913.jpg" alt="sorry">-->
-<!--         </div>-->
-<!--       </div>-->
 
       </div>
       <div class="col-md-9 order-1">
         <div class="swiper-container main-slider loading">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper" id="swiper-wrapperId2">
           </div>
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev swiper-button-white"></div>
@@ -190,6 +186,9 @@
   </div>
 
   <div class="bgcolor6">
+
+    <a name="Kontact"></a>
+
     <div class="kontaktBox">
       <div class="row">
         <div class="col-md-6 col-12 d-flex flex-wrap align-content-center justify-content-center">

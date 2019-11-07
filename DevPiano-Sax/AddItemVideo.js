@@ -6,7 +6,7 @@
 
 function loadVideoFunc() {
 
-  let contentBoxVideo = document.getElementById('contentList');
+  let contentBoxVideo = document.getElementById('swiper-contentList');
 
   let xhr = new XMLHttpRequest();
   xhr.open("GET", 'jsonobj/videos.json');
@@ -27,21 +27,20 @@ function loadVideoFunc() {
     for(var i=0;i<obj.length;i++){
 
       let div = document.createElement("div");
-      div.className = "txtvideo";
+      div.className = "txtvideo swiper-slide";
       div.id = "txtvideo";
       div.href = obj[i].link;
 
       div.innerHTML = `<a src = ${obj[i].link} ></a>` + "<img src='"+ obj[i].img + "' class='txtvideo_img' alt='sax'>" +
-          "<span class=\"txtvideo_txt\">"  + (obj[i].description) + "</span>";
+          "<div class=\"txtvideo_txt\">"  + (obj[i].description) + "</div>";
 
       contentBoxVideo.appendChild(div);
 
-      console.log(obj[i].description,"vrevervrvremvoerieri")
     }
      RunPlaylist();
   }
 
-  let contentlist = document.getElementById("contentList");
+  let contentlist = document.getElementById("swiper-contentList");
   let replacementvideo = document.getElementById("replacementvideo");
   contentlist.addEventListener("click", linkclick);
 
