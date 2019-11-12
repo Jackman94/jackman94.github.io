@@ -129,16 +129,17 @@ hr {
   min-height: 250px;
 }
 .txtvideo{
-  margin: 0 5px;
+  padding: 0 10px;
   width: 150px;
   z-index: 10000;
 }
 .txtvideo_img{
-  width: 150px;
-  height: 115px;
-  display: inline-block;
+  width: inherit;
+  height: 80%;
+
 }
 .txtvideo_txt{
+  padding: 0 10px;
   color:white;
   width: 150px;
 }
