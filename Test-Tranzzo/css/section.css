@@ -164,6 +164,12 @@
     .sectionGrid .changeForm {
         justify-self: auto;
     }
+    .sending .sendingSelect {
+        height: auto;
+    }
+    .sending .sendingSelect span {
+        font-size: 11px;
+    }
 }
 
 
