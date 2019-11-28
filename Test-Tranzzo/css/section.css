@@ -1,0 +1,174 @@
+.sectionGrid {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));
+}
+.description {
+    max-width: 542px;
+}
+.description h1 {
+    font-family: Gotham;
+    font-size: 40px;
+    font-weight: bold;
+}
+.description p {
+    font-family: Roboto;
+    font-size: 20px;
+    max-width: 444px;
+}
+.description .imageLabel {
+    margin-top: 55px;
+    width: 145px;
+    height: 71px;
+}
+.sectionGrid .changeForm {
+    justify-self: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    padding: 10px 22px;
+    max-width: 400px;
+    min-height: 475px;
+    text-align: center;
+}
+.imageboxforchange {
+    display: flex;
+    justify-content: space-around;
+}
+.imageboxforchange .litleImage {
+    width: 126px;
+    height: 42px;
+    border-radius: 3px;
+    border: solid 1px #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageboxforchange .litleImage :nth-child(1) {
+    width: 26px;
+    height: 26px;
+}
+.litleImage :nth-child(2) {
+    width: 12px;
+    height: 8px;
+}
+.litleImage :nth-child(3) {
+    width: 26px;
+    height: 26px;
+}
+.sending , .getting {
+    width: 100%;
+    height: 72px;
+    border-radius: 3px;
+    border: solid 1px #efefef;
+}
+.sending {
+ margin-top: 33px;
+    display:grid ;
+    grid-template-columns: 1fr 1fr;
+}
+.changeForm p {
+    color: #a3a3a3;
+    font-family: Roboto;
+    font-size: 12px;
+    text-align: left;
+}
+.changeForm p span {
+    font-family: GothamPro;
+    font-weight: 600;
+    color: #212121;
+}
+.sendingInput{
+    margin-left: 10px;
+    display: grid;
+    align-self: end;
+    justify-self: start;
+}
+.sending .sendingInput span {
+    font-family: Roboto;
+    margin-bottom: 6px;
+    justify-self: start;
+    font-size: 14px;
+    color: #a3a3a3;
+}
+.sending .sendingInput input {
+    Border: none; outline: none;
+    height: 36px;
+}
+.sending .sendingSelect {
+    align-self: center;
+    height: 20px;
+}
+.sendingSelect img {
+    height: 18px;
+}
+.sendingSelect :nth-child(3) {
+    height: 15px;
+    opacity: 0.3;
+}
+.sendingSelect span {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #212121;
+}
+.changeForm label {
+    float: left;
+    font-size: 14px;
+}
+.getting {
+    margin-top: 28px;
+}
+.changeForm button {
+    float: right;
+    margin-top: 26px;
+    width: 240px;
+    height: 42px;
+    border-radius: 5px;
+    background-color:#331139;
+    font-family: GothamPro;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+/*ListItem*/
+.listItem-block {
+    position: relative;
+}
+.listItem {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 3px;
+    border: solid 1px #efefef;
+    z-index: 1;
+}
+.cachBox {
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: solid 1px #efefef;
+}
+.cachBox img {
+    margin-left: 10px;
+    height: 18px;
+}
+.cachBox span {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #212121;
+}
+@media (max-width: 576px)  {
+    .sectionGrid .changeForm {
+        justify-self: auto;
+    }
+}
+
+
+
+
+
+
+

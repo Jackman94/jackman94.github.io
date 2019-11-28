@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nav-menu.css">
+  <link rel="stylesheet" href="css/section.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header></header>
+
+  <nav class="nav-size">
+    <div class="icon-image">
+      <div class="img-block"><img src="./img/cryptoexch.png" alt="cryptoexch"></div>
+      <div>
+        <input type="checkbox" id="checkboxHamburger" class="checkbox2 visuallyHidden">
+        <label for="checkboxHamburger">
+          <div class="hamburger hamburger2">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+            <span class="bar bar4"></span>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="nav-grid" id="hamburgerMenu">
+      <div><a href="">Обменять</a></div>
+      <div><a href="">Резервы</a></div>
+      <div><a href="">Как мы работаем</a></div>
+      <div><a href="">FAQ</a></div>
+      <div><a href="">Документы</a> </div>
+      <div class="private"><a href="">Личный кабинет</a></div>
+    </div>
+  </nav>
+
+  <section class="sectionGrid">
+
+    <div class="description">
+      <h1>Меняйте валюты как вам
+        удобно!
+      </h1>
+      <p>
+        Просто выберите интересующую вас валюту из перечня доступых, и мы обменяем ее по самому выгодному курсу.
+      </p>
+      <div class="imageLabel">
+        <img src="./img/trustpilot.png" alt="label">
+      </div>
+    </div>
+
+    <div class="changeForm">
+      <h2>Выберете одно из направлений обмена</h2>
+      <div class="imageboxforchange" id="currencyExchange">
+        <div class="litleImage"id="bitcoin-dolar">
+          <img src="./img/bitcoin@3x.png" alt="sorry">
+          <img src="./img/arrow-right@3x.png" alt="sorry">
+          <img src="./img/card@3x.png" alt="sorry">
+        </div>
+        <div class="litleImage" id="bitcoin-ethereum">
+          <img src="./img/bitcoin@3x.png" alt="sorry">
+          <img src="./img/arrow-right@3x.png" alt="sorry">
+          <img src="./img/etherium@3x.png" alt="sorry">
+        </div>
+        <div class="litleImage" id="bitcoin-advcash">
+          <img src="./img/bitcoin@3x.png" alt="sorry">
+          <img src="./img/arrow-right@3x.png" alt="sorry">
+          <img src="./img/advcash@3x.png" alt="sorry">
+        </div>
+      </div>
+
+      <div class="sending" id="closeSending">
+        <div class="sendingInput">
+          <span>Вы отправляете</span>
+          <input type="number" placeholder="1000">
+        </div>
+        <div class="sendingSelect" id="sendingSelect">
+            <img src="./img/card@3x.png" alt="visa" id="sendingSelectImg">
+            <span id="sendingSelectText">Visa/Mastercard UAH</span>
+            <img src="./img/стрелка-вниз-иконка-png-5.png" alt="arrow">
+        </div>
+      </div>
+
+      <div class="listItem-block">
+        <div class="listItem" id="sendingList">
+          <div class="cachBox"><img src="./img/card@3x.png" alt="sorry" class="cachBoxImg"><span class="cachBoxName">Visa/Mastercard UAH</span></div>
+          <div class="cachBox"><img src="./img/card@3x.png" alt="sorry" class="cachBoxImg"><span class="cachBoxName">Visa/Mastercard UAH1</span></div>
+          <div class="cachBox"><img src="./img/card@3x.png" alt="sorry" class="cachBoxImg"><span class="cachBoxName">Visa/Mastercard UAH2</span></div>
+        </div>
+      </div>
+
+      <p>Комисия за обмен <span>23UAH</span></p>
+
+      <div class="getting sending" id="closeGetting">
+        <div class="sendingInput">
+          <span>Вы получаете</span>
+          <input type="number" placeholder="1000">
+        </div>
+        <div class="sendingSelect" id="gettingSelect">
+          <img src="./img/etherium@3x.png" alt="visa" id="gettingSelectImg">
+          <span id="gettingSelectText">Ethereum ETH</span>
+          <img src="./img/стрелка-вниз-иконка-png-5.png" alt="arrow">
+        </div>
+      </div>
+
+      <div class="listItem-block" >
+        <div class="listItem" id="gettingList">
+          <div class="cachBox"><img src="./img/etherium@3x.png" alt="sorry" class="cachBoxImg"><span class="cachBoxName">Ethereum ETH</span></div>
+          <div class="cachBox"><img src="./img/etherium@3x.png" alt="sorry" class="cachBoxImg"><span class="cachBoxName">Ethereum ETH1</span></div>
+          <div class="cachBox"><img src="./img/etherium@3x.png" alt="sorry" class="cachBoxImg"><span class="cachBoxName">Ethereum ETH2</span></div>
+        </div>
+      </div>
+
+      <label >
+        <input type="checkbox" checked="checked">Я согласен с правилами сервиса
+      </label>
+
+      <button type="button">Обменять</button>
+
+    </div>
+  </section>
+
+
+
+
+
+  <script src="js/main.js"></script>
+  <script src="js/hamburger.js"></script>
+</body>
+
+</html>

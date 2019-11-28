@@ -1,0 +1,135 @@
+.nav-size {
+    max-width: 1150px;
+
+}
+.icon-image {
+    display: block;
+    float: left;
+    width: 195px;
+    height: 35px;
+    margin-right: 100px;
+}
+.img-block {
+    float: left;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(100px, 1fr) );
+    grid-auto-rows: 37px;
+    grid-column-gap: 10px;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+.nav-grid div {
+    /*background-color: wheat;*/
+    height: 37px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+.nav-grid :nth-child(6) {
+    background-color: #331139;
+    padding: 0 10px;
+}
+.nav-grid div a {
+    color: black;
+    text-decoration:none;
+    font-family: "Roboto";
+}
+
+.nav-grid .private a {
+    color: white;
+}
+
+
+
+/*Hamburger*/
+
+.visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+}
+.hamburger {
+    visibility: hidden;
+    margin: 5px auto;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 82px;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: maroon;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 13.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+.checkbox2:checked + label > .hamburger2 > .bar1{
+    transform: translateX(40px);
+    background-color: transparent;
+}
+
+.checkbox2:checked + label > .hamburger2 > .bar2{
+    transform: rotate(45deg);
+}
+
+.checkbox2:checked + label > .hamburger2 > .bar3{
+    transform: rotate(-45deg);
+}
+
+.checkbox2:checked + label > .hamburger2 > .bar4{
+    transform: translateX(-40px);
+    background-color: transparent;
+}
+
+
+
+@media (max-width: 576px)  {
+    .hamburger {
+        visibility: visible;
+    }
+    .nav-grid {
+        display: none;
+        position: absolute;
+        top: 50px;
+        float:left;
+    }
+    .nav-grid div {
+        background-color: #ffee8a;
+    }
+    .img-block {
+        margin-left: 40px;
+    }
+    .nav-size {
+        display: inline-block;
+    }
+}
