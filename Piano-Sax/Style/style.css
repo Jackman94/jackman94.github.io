@@ -1,12 +1,24 @@
 body{
   background-color: black;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 100
+}
+a {
+  color: white;
+  text-decoration:none;
+}
+a:hover {
+  color: black;
+  text-decoration:none;
 }
 
-h1{
-  text-align: center;
-  font-weight: bold;
-  font-size: 200px;
+hr {
+  height: 5px;
+  width: 90px;
+  background-color: rgba(222,225,235,0.2);
+  display: none;
 }
+
 .bgcolor1{
   background-color: rgba(30,30,30,255);
   width: 100%;
@@ -17,7 +29,19 @@ h1{
 .al-center{
   display: flex;
   justify-content: center;
-  margin:20px 0;
+  margin:10px 0;
+}
+.al-center-logo-container {
+  border: 1px solid darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+}
+.al-center-logo-container img {
+  max-height: 80px;
+  padding-right: 3px;
 }
 .bgcolor2{
   background-image: url("../images/фото1.png");
@@ -29,70 +53,76 @@ h1{
   overflow: hidden;
 }
 .search{
-  height: 100px;
+  font-family: "UnitypeXCnd-Light";
+  height: 80px;
   width: 100%;
-  z-index: 90000;
-  /*background-color: rgba(51,108,153,0.2);*/
+  z-index: 2;
+  flex-wrap: nowrap;
 }
 .headmenu{
-  color: white;
+  color: white !important;
   text-align: center;
-  font-family: "Baskerville Old Face";
-  font-weight: bold;
+  /*font-family: 'Cuprum', sans-serif !important;*/
+  font-family: 'Jura', sans-serif!important;
+  font-size: 20px;
+  font-weight: 100;
+  white-space: nowrap;
 }
 .headmenu:hover{
   background-color:rgba(244,247,255,255);
-  color: black;
 }
 .down{
-  margin-top: 40px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
 }
 .description{
   background-color: rgba(222,225,235,0.2);
   width:100%;
   height: 300px;
   overflow: hidden;
-  padding: 0 40px 40px;
+  padding: 0 40px 20px;
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .title{
+  font-family: 'Poiret One', cursive;
   color:white;
   font-size: 28px;
   text-align: center;
   display: flex;
   justify-content: center;
   padding-top: 20px;
+  font-weight: bold;
 }
 .abautus{
   font-weight: normal;
-  font-size: 12px;
+  font-size: 15px;
   color: white;
   margin-top: 10px;
 }
-.bgcolor3{
-  background-image: url("../images/пиано2.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;
-  width: 100%;
+.abautus-logo-name {
+  font-family: 'Poiret One', cursive;
+  font-weight: 600;
+  font-size: 15px;
 }
-.globbox{
-  min-height: 100px;
-  background-color:rgba(222,225,235,0.2);
-  color:white;
-  padding: 10px;
-  margin-top:35px;
-  margin-left: 1%;
-  margin-right: 1%;
-  text-align: center;
+.abautus p {
+  /*display: flex;*/
+  /*justify-content: center;*/
 }
-
-
+.abautus p:last-child{
+  margin-bottom: 10px;
+}
 .bgcolor4{
   background-image: url("../images/bgpiano.jpg");
   background-repeat: no-repeat;
   background-size:100%;
   width: 100%;
-  min-height: 537px;
   padding-top:2%;
 }
 .bgvideo{
@@ -108,11 +138,29 @@ h1{
 }
 .posvideo{
   margin-top: 25px;
-  padding-left:5px;
-  padding-right:5px;
   display: flex;
   justify-content:space-between;
   overflow: hidden;
+  padding: 0 5px;
+}
+.posvideo_left-button, .posvideo_right-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.posvideo_left-button :focus {
+  outline: none;
+}
+.posvideo_right-button :focus {
+  outline: none;
+}
+.posvideo_left-button img {
+  width: 30px;
+  transform: rotate(-90deg);
+}
+.posvideo_right-button img {
+  width: 30px;
+  transform: rotate(90deg);
 }
 .contentList{
   width: auto;
@@ -120,7 +168,6 @@ h1{
   position: relative;
   transition: all ease 2s;
   left: 0;
-  right: 4800px;
 }
 .videoContainer {
   padding-bottom: 15px;
@@ -131,15 +178,20 @@ h1{
   min-height: 250px;
 }
 .txtvideo{
-  margin: 0 5px;
+  padding: 0 10px;
   width: 150px;
+  z-index: 10000;
+  cursor: pointer;
 }
 .txtvideo_img{
-  width: 150px;
-  height: 115px;
+  width: 100%;
+  height: 80%;
+  max-height: 100px;
 }
 .txtvideo_txt{
+  padding: 0 10px;
   color:white;
+  width: 150px;
 }
 .Pointer{
   width: 35px;
@@ -153,28 +205,77 @@ h1{
   background-color: rgba(222,225,235,0.2);
   font-size: 20px;
 }
-.headPictures{
-  min-height: 513px;
+
+.listVideo-slider {
+  width: 100% !important;
+  height: auto!important;
+}
+
+button {
+  border: 1px solid silver !important;
+  border-radius: 0 !important;
 }
 
 
+
+
+
+
+
+
+
+
+
 @media (max-width: 576px) {
-  .bgvideo{
-    width: auto;
+body {
+  background-image: url("../images/mobileBackground.png");
+}
+
+.bgvideo{
+width: auto;
+}
+.videobox {
+padding-right: 0;
+padding-left: 0;
+}
+.Pointer {
+display: none;
+}
+.contentList {
+transition: all ease 250ms;
+}
+.search {
+display: none;
+}
+.bgcolor2 {
+background-size: 590px;
+background-position: right top;
+}
+.bgsize {
+margin-top: 315px;
+}
+.description {
+margin-bottom: 0;
+}
+
+
+
+/*logo mobile*/
+  .al-center img {
+    width: 46px;
+    height: 56px;
   }
-  .videobox {
-    padding-right: 0;
-    padding-left: 0;
+  .al-center {
+    margin: 10px 0;
   }
-  .Pointer {
-    display: none;
+
+  /*hr line*/
+  hr {
+    margin: 60px auto;
+    display: block;
   }
-  .contentList {
-    transition: all ease 250ms;
-  }
-  .search {
-    display: none;
-  }
+
+
 }
 
 
