@@ -1,6 +1,6 @@
+
 function RunPlaylist() {
-    let videoLiSliderSelector = "listVideo-slider";
-    var mySwiper = new Swiper ('.listVideo-slider', {
+    new Swiper ('.listVideo-slider', {
         // Optional parameters
         direction: 'horizontal',
         loop: false,
@@ -12,8 +12,8 @@ function RunPlaylist() {
 
         // Navigation arrows
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.posvideo_right-button',
+            prevEl: '.posvideo_left-button',
         },
 
         // And if we need scrollbar
