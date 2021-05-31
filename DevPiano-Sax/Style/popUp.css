@@ -1,0 +1,42 @@
+.popUp {
+    background-color: rgba(0,0,0,0.8);;
+    min-height: 900px;
+    position: absolute;
+    z-index:100000;
+    visibility: hidden;
+    color: white;
+}
+.closeButton {
+    font-size: 35px;
+    display: flex;
+    justify-content: flex-end;
+    color:white;
+    cursor: grab;
+}
+#backgroundPopUp {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.popUp-image-box {
+    width: 300px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+.popUp-image-box-right {
+    float: right;
+    margin-left: 15px;
+}
+.popUp-image {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 576px) {
+    .popUp-image-box {
+        width: 150px;
+    }
+}

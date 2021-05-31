@@ -1,0 +1,47 @@
+.bgcolor5 {
+    margin-top: 60px;
+    display: flex;
+}
+
+.mySwiper {
+    width: 20%;
+    height: 600px;
+    padding-right: 10px;
+}
+.mySwiper2 {
+    width: 80%;
+    height: 600px;
+}
+.mySwiper .swiper-wrapper .swiper-slide .slide-bgimg img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:200px;
+    height:200px;
+    object-fit:cover;
+}
+
+
+.slide-bgimg {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.slide-bgimg .entity-img {
+    width: auto;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .mySwiper {
+        display: none;
+    }
+    .mySwiper2 {
+        width: 100%;
+        height: 400px;
+    }
+}
