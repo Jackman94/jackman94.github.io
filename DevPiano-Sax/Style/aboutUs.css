@@ -22,14 +22,23 @@
     margin-left: 1%;
     margin-right: 1%;
     text-align: center;
+    padding: 20px;
 }
-.globbox p {
+.globbox h3 {
+    font-family: 'Jura', sans-serif!important;
+    font-size: 25px;
+    font-weight: 100;
+}
+p {
+    font-family: 'Cuprum', sans-serif;
+    line-height: 20px;
     font-size: 15px;
     color: rgb( 255, 255, 255 );
 }
 .Picturesdowndescription img{
     width: 100%;
-    height: auto;
+    height: 118px;
+    margin-bottom: 16px;
 }
 .arrow-hidden {
     display: none;
@@ -37,6 +46,7 @@
 .blockhidden {
     overflow: hidden;
 }
+
 
 
 

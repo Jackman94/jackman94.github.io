@@ -4,6 +4,8 @@
 //   window.addEventListener('load', loadVideoFunc);
 // }
 
+window.addEventListener('load', loadVideoFunc);
+
 function loadVideoFunc() {
 
   let contentBoxVideo = document.getElementById('swiper-contentList');
@@ -49,7 +51,6 @@ function loadVideoFunc() {
     let linkvideo = target.href;
 
     transformLink(linkvideo);
-
   }
 
   function transformLink (linkvideo) {
@@ -66,5 +67,3 @@ function loadVideoFunc() {
   }
 }
 
-
-loadVideoFunc();
