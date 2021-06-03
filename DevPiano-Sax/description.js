@@ -14,7 +14,7 @@ fetch('jsonobj/services.json')
             const div = document.createElement('a');
             div.classList = 'col-md-6 service-container';
             div.id = service.id;
-            div.href = 'http://localhost:63342/Piano-Sax/services.html#'+ service.id;
+            div.href = './services.html#'+ service.id;
             if (i % 2 === 0) {
                 div.innerHTML = `
                 <img src=${service.photo} alt="">
