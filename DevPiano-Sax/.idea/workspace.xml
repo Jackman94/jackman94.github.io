@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e349c6d2-4dfd-46d7-aeaa-d311791a404e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/description.js" beforeDir="false" afterPath="$PROJECT_DIR$/description.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Piano-Sax/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Piano-Sax/Index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +23,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -36,10 +41,26 @@
       <option name="presentableId" value="Default" />
       <updated>1622753448350</updated>
       <workItem from="1622753449381" duration="976000" />
+      <workItem from="1623270107954" duration="1289000" />
+      <workItem from="1623352920858" duration="619000" />
+      <workItem from="1623783050590" duration="819000" />
+      <workItem from="1623785016026" duration="289000" />
+      <workItem from="1623790286773" duration="153000" />
+      <workItem from="1623790522708" duration="624000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1623785318953">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1623785318953" />
+    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1623790622694">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1623790622694" />
   </component>
 </project>
