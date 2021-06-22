@@ -69,11 +69,10 @@ body {
 }
 .shop-container {
     margin-top: 70px;
-    height: 900px;
+    padding: 151px 0;
     background-image: url("../image/rectangle-background.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    margin-bottom: 1000px;
+    background-size: cover;
 }
 .shop-container .swiper-wrapper {
     /*width: 80%;*/
@@ -87,11 +86,11 @@ body {
     /*height: auto;*/
 }
 .shop-title {
-    padding-top: 130px;
     color: white;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 .shop-container-list {
 
@@ -119,4 +118,33 @@ body {
     align-items: center;
     width: fit-content;
     padding: 0 7px;
+}
+.concert-schedule-container {
+    display: flex;
+}
+.concert-schedule-container_title {
+    font-size: 120px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.concert-schedule-container_list {
+
+}
+.custom-list {
+    margin-right: 10px;
+    position: relative;
+
+}
+.custom-list::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+}
+.custom-list_number {
+    font-weight: bold;
 }
