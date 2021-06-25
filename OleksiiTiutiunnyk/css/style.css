@@ -67,12 +67,17 @@ body {
 .album-container img {
     height: 460px;
 }
+.shop-container_background {
+    background-image: url("../image/rectangle-background.png");
+    background-repeat: round;
+}
 .shop-container {
     margin-top: 70px;
-    padding: 151px 0;
-    background-image: url("../image/rectangle-background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding-bottom: 220px;
+    padding-top: 130px;
+    /*background-image: url("../image/rectangle-background.png");*/
+    /*background-repeat: round;*/
+    margin-bottom: 60px;
 }
 .shop-container .swiper-wrapper {
     /*width: 80%;*/
@@ -82,7 +87,7 @@ body {
 }
 .shop-container .swiper-wrapper .swiper-slide .shop-item img {
     width: 100%;
-    height: 315px;
+    height: 350px;
     /*height: auto;*/
 }
 .shop-title {
@@ -91,6 +96,7 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    font-size: 40px ;
 }
 .shop-container-list {
 
@@ -121,19 +127,44 @@ body {
 }
 .concert-schedule-container {
     display: flex;
+    margin-bottom: 100px;
 }
 .concert-schedule-container_title {
-    font-size: 120px;
+    font-size: 162px;
     text-transform: uppercase;
-    text-align: center;
+    font-weight: bold;
+    letter-spacing: 10px;
 }
-.concert-schedule-container_list {
-
+.concert-schedule-container_list p {
+    font-size: 22px;
+}
+.concert-schedule-container_list_month {
+    margin-bottom: 50px;
+    font-family: 'Alfa Slab One', cursive;
 }
 .custom-list {
     margin-right: 10px;
     position: relative;
 
+}
+.concert-schedule-container_list_button {
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    padding: 6px 20px;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+}
+.concert-schedule-container_list_button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .custom-list::after {
     content: '';
@@ -147,4 +178,59 @@ body {
 }
 .custom-list_number {
     font-weight: bold;
+}
+.about-container {
+    background-image: url("../image/about-background.png");
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    background-repeat: round;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-bottom: 40px;
+    position: relative;
+}
+.about-container_background {
+    background-color: black;
+    background-position: 0 0 ;
+    height: 100%;
+}
+.about-container_title {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+}
+.about-container_description {
+    max-width: 400px;
+    margin-bottom: 60px;
+    font-size: 20px;
+
+}
+h2 {
+    font-size: 40px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    justify-content: center;
+}
+.footer-container_title {
+    margin-bottom: 50px;
+}
+.social_network_footer {
+display: flex;
+}
+.social_network_footer a {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-right: 25px;
+}
+.social_network_footer a img {
+    width: 100%;
+    height: 100%;
 }
