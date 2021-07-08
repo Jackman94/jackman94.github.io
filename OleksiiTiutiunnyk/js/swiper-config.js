@@ -1,3 +1,28 @@
+function musicContainerSwiperConfig() {
+    let musicSwiper = new Swiper('.album-container_description', {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        noSwiping: true,
+        noSwipingClass: 'album-container_description',
+        loop: true,
+    })
+    new Swiper(".album-container-slider", {
+        spaceBetween: 30,
+        slidesPerView: 1,
+        loop: true,
+        navigation: {
+            nextEl: ".album-button-next",
+            prevEl: ".album-button-prev"
+        },
+        thumbs: {
+            swiper: musicSwiper,
+        },
+    });
+}
+
 window.addEventListener('load', function () {
 
     new Swiper(".video-container", {
@@ -16,12 +41,5 @@ window.addEventListener('load', function () {
             prevEl: ".shop-prev-button"
         }
     });
-    new Swiper(".album-container-slider", {
-        spaceBetween: 30,
-        slidesPerView: 1,
-        navigation: {
-            nextEl: ".album-next-button",
-            prevEl: ".album-prev-button"
-        }
-    });
+    musicContainerSwiperConfig()
 });

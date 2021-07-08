@@ -1,0 +1,57 @@
+{
+  "albums": [
+    {
+      "albumName": "Paradize",
+      "singles": [
+        {
+          "icon": "image/SINGLE-1.png",
+          "name": "Listen “never looking back” on",
+          "description": "                         <p class=\"album-container_description-text\">\n                                    Our first single  \"Never Looking Back\" is about how we can achieve the seemingly impossible,  how we can recreate a new strong self that can go through hell and win.  We can do a lot to achieve our aims.\n                                </p>\n                                <p class=\"album-container_description-text\">\n                                    We are preparing new songs and are very keen to blow a heavy rock stage. We have a lot to tell you. We have great ambitions. We work hard and soon we will show our results.\n                                </p>",
+          "links": {
+              "bandcamp": "#",
+              "youtubeMusic": "#",
+              "spotify": "#",
+              "appleMusic": "#",
+              "iTunes": "#",
+              "deezer": "#",
+              "youTube": "#",
+              "soundCloud": "#",
+              "amazonMusic": "#"
+            }
+        },
+        {
+          "icon": "image/SINGLE-2.png",
+          "name": "Listen “never looking back” on",
+          "description": "                         <p class=\"album-container_description-text\">\n                                    Our first single  \"Never Looking Back\" is about how we can achieve the seemingly impossible,  how we can recreate a new strong self that can go through hell and win.  We can do a lot to achieve our aims.\n                                </p>\n                                <p class=\"album-container_description-text\">\n                                    We are preparing new songs and are very keen to blow a heavy rock stage. We have a lot to tell you. We have great ambitions. We work hard and soon we will show our results.\n                                </p>",
+          "links": {
+            "bandcamp": "#",
+            "youtubeMusic": "#",
+            "spotify": "#",
+            "appleMusic": "#",
+            "iTunes": "#",
+            "deezer": "#",
+            "youTube": "#",
+            "soundCloud": "#",
+            "amazonMusic": "#"
+          }
+        },
+        {
+          "icon": "image/SINGLE-3.png",
+          "name": "Listen “never looking back” on",
+          "description": "                         <p class=\"album-container_description-text\">\n                                    Our first single  \"Never Looking Back\" is about how we can achieve the seemingly impossible,  how we can recreate a new strong self that can go through hell and win.  We can do a lot to achieve our aims.\n                                </p>\n                                <p class=\"album-container_description-text\">\n                                    We are preparing new songs and are very keen to blow a heavy rock stage. We have a lot to tell you. We have great ambitions. We work hard and soon we will show our results.\n                                </p>",
+          "links": {
+            "bandcamp": "#",
+            "youtubeMusic": "#",
+            "spotify": "#",
+            "appleMusic": "#",
+            "iTunes": "#",
+            "deezer": "#",
+            "youTube": "#",
+            "soundCloud": "#",
+            "amazonMusic": "#"
+          }
+        }
+      ]
+    }
+  ]
+}
