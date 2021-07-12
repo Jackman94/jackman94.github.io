@@ -1,5 +1,5 @@
 function musicContainerSwiperConfig() {
-    let musicSwiper = new Swiper('.album-container_description', {
+     musicSwiper = new Swiper('.album-container_description', {
         direction: "vertical",
         slidesPerView: 1,
         spaceBetween: 30,
@@ -7,8 +7,8 @@ function musicContainerSwiperConfig() {
         watchSlidesProgress: true,
         noSwiping: true,
         noSwipingClass: 'album-container_description',
-        loop: true,
-    })
+        loop: true
+    });
     new Swiper(".album-container-slider", {
         spaceBetween: 30,
         slidesPerView: 1,
@@ -18,8 +18,8 @@ function musicContainerSwiperConfig() {
             prevEl: ".album-button-prev"
         },
         thumbs: {
-            swiper: musicSwiper,
-        },
+            swiper: musicSwiper
+        }
     });
 }
 
@@ -35,10 +35,15 @@ window.addEventListener('load', function () {
     });
     new Swiper(".shop-container-swiper", {
         spaceBetween: 30,
-        slidesPerView: 3,
+        slidesPerView: 1,
         navigation: {
             nextEl: ".shop-next-button",
             prevEl: ".shop-prev-button"
+        },
+        breakpoints: {
+            720: {
+                slidesPerView: 3,
+            }
         }
     });
     musicContainerSwiperConfig()

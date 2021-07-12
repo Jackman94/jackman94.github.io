@@ -14,7 +14,9 @@ body {
 .swiper-button-next {
     color: black !important;
 }
-
+.swiper-slide {
+    /*height: fit-content !important;*/
+}
 .header-container {
     margin-top: 10px;
     display: flex;
@@ -88,6 +90,11 @@ body {
     color: #C4C4C4;
 }
 
+.album-container-slider_global {
+    position: relative;
+    height: fit-content;
+}
+
 .album-container_title p {
     font-size: 24px;
     font-weight: 700;
@@ -104,8 +111,22 @@ body {
     /*height: auto;*/
 }
 .album-container_description {
-    height: 473px;
+    max-height: 450px;
 }
+.album-container_description .swiper-wrapper .swiper-slide {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/* хром, сафари */
+.album-container_description .swiper-wrapper .swiper-slide::-webkit-scrollbar { width: 0; }
+
+/* ie 10+ */
+.album-container_description .swiper-wrapper .swiper-slide { -ms-overflow-style: none; }
+
+/* фф (свойство больше не работает, других способов тоже нет)*/
+.album-container_description .swiper-wrapper .swiper-slide { overflow: -moz-scrollbars-none; }
+
+
 .album-container_description-title {
     margin-bottom: 20px;
     font-size: 36px;
@@ -362,6 +383,19 @@ display: flex;
     height: 100%;
 }
 @media (max-width: 768px) {
+    .separator-80 {
+        height: 40px;
+    }
+
+    .header-container_network {
+        align-items: flex-start;
+    }
+    .swiper-button-next {
+        right: 0!important;
+    }
+    .swiper-button-prev {
+        left: 0!important;
+    }
     .header-container_menu {
         position: fixed;
         bottom: 0;
@@ -373,7 +407,7 @@ display: flex;
     .header-container_logo {
         position: absolute;
         left: 50%;
-        top: 70px;
+        top: 50px;
     }
     .header-container_menu nav {
         display: flex;
@@ -396,5 +430,41 @@ display: flex;
     }
     .social_network_footer a {
         margin: auto;
+    }
+    .album-container-slider {
+        width: 90%;
+    }
+    .album-container_description {
+        margin-top: 20px;
+    }
+    .album-container_platform {
+    }
+    .album-container_platform section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .album-container_platform section img {
+        width: 50%;
+        padding: 10px;
+    }
+    .shop-container {
+        margin: 30px auto;
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    .shop-item .shop-item_image {
+        height: 316px!important;
+    }
+    .concert-container_background {
+        padding-top: 50px;
+    }
+    .concert-schedule-container_title {
+        line-height: 110px;
+    }
+    .concert-schedule-container_list {
+        align-items: center;
+        margin-top: 30px;
     }
 }
