@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/swiper-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/swiper-config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +102,8 @@
       <workItem from="1625507133466" duration="6521000" />
       <workItem from="1625738891719" duration="481000" />
       <workItem from="1626013179873" duration="4676000" />
-      <workItem from="1626113564140" duration="6411000" />
+      <workItem from="1626113564140" duration="6740000" />
+      <workItem from="1627319400273" duration="12932000" />
     </task>
     <servers />
   </component>

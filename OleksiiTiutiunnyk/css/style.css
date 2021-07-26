@@ -40,10 +40,11 @@ body {
 }
 .header-container_menu nav a:hover {
     font-weight: 500;
+    margin-right: 36.5px;
 }
 .header-container_logo {
-    /*position: absolute;*/
-    /*left: 50%;*/
+    position: absolute;
+    left: 50%;
     transform: translate(-50%);
 }
 .header-container_network {
@@ -56,6 +57,15 @@ body {
 .header-container_network a img {
     width: 24px;
     height: 24px;
+}
+.header-container_network .dropdown {
+    margin-left: 16px;
+}
+.header-container_network .dropdown .dropdown-menu {
+ min-width: 60px;
+}
+.dropdown .dropdown-menu .dropdown-item {
+    margin: 0;
 }
 .video-container {
     display: flex;
@@ -171,7 +181,7 @@ body {
 .shop-container .swiper-wrapper .swiper-slide {
     width: 100%;
 }
-.shop-container .swiper-wrapper .swiper-slide .shop-item img {
+.shop-item img {
     width: 100%;
     height: 350px;
     /*height: auto;*/
@@ -348,6 +358,35 @@ body {
 
 
 }
+.description-container {
+    height: 120px;
+    overflow: hidden;
+    margin-top: 60px;
+}
+.description-container_button {
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+@keyframes list {
+    0% {
+        /*height: 120px;*/
+    }
+    80% {
+        height: 400px;
+    }
+    100% {
+        height: auto;
+    }
+}
+.active {
+    animation-duration: 2s;
+    animation-name: list;
+    animation-fill-mode: forwards;
+}
+.description-container_button:hover {
+    color: blue;
+}
 h2 {
     font-size: 40px;
 }
@@ -383,12 +422,21 @@ display: flex;
     height: 100%;
 }
 @media (max-width: 768px) {
+    h2 {
+        font-size: 30px!important;
+    }
     .separator-80 {
         height: 40px;
     }
-
+    .header-container {
+        height: 165px;
+    }
     .header-container_network {
         align-items: flex-start;
+        width: 100%;
+    }
+    .header-container_network .dropdown {
+        margin-left: auto;
     }
     .swiper-button-next {
         right: 0!important;
@@ -430,6 +478,10 @@ display: flex;
     }
     .social_network_footer a {
         margin: auto;
+        width: 35px;
+    }
+    .album-container_title p {
+        font-size: 20px;
     }
     .album-container-slider {
         width: 90%;
@@ -446,7 +498,7 @@ display: flex;
         flex-wrap: wrap;
     }
     .album-container_platform section img {
-        width: 50%;
+        width: 30%;
         padding: 10px;
     }
     .shop-container {
@@ -454,17 +506,43 @@ display: flex;
         padding-bottom: 100px;
         padding-top: 100px;
     }
-    .shop-item .shop-item_image {
-        height: 316px!important;
+    .shop-item img {
+        height: 316px
     }
     .concert-container_background {
         padding-top: 50px;
     }
     .concert-schedule-container_title {
-        line-height: 110px;
+        line-height: 70px;
+        font-size: 60px!important;
     }
     .concert-schedule-container_list {
         align-items: center;
         margin-top: 30px;
+    }
+    .concert-schedule-container_list_month {
+        margin-bottom: 20px;
+    }
+    .concert-schedule-container_list_expect {
+        font-size: 65px;
+        line-height: 40px;
+    }
+    .concert-schedule-container_list_soon {
+        font-size: 80px;
+    }
+    .about-container {
+        padding-bottom: 30px;
+    }
+    .about-container_title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .footer-container {
+        height: 270px;
+    }
+}
+@media (min-width: 730px) and (max-width: 991.98px) {
+    .shop-item_image {
+        height: 220px!important;
     }
 }
