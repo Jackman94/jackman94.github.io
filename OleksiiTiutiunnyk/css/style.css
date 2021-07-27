@@ -17,6 +17,10 @@ body {
 .swiper-slide {
     /*height: fit-content !important;*/
 }
+.scroll-slide {
+    position: relative;
+}
+
 .header-container {
     margin-top: 10px;
     display: flex;
@@ -158,7 +162,11 @@ body {
     justify-content: space-between;
     margin-bottom: 23px;
 }
-
+.album-container_platform section a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .shop-container_background {
     /*background-image: url("../image/rectangle-background.png");*/
     background-image: url("../image/shop-background.png");
@@ -362,27 +370,17 @@ body {
     height: 120px;
     overflow: hidden;
     margin-top: 60px;
+    transition: 1s;
 }
 .description-container_button {
     margin-top: 10px;
     cursor: pointer;
-
+    font-weight: 500;
 }
 @keyframes list {
-    0% {
-        /*height: 120px;*/
-    }
-    80% {
-        height: 400px;
-    }
-    100% {
-        height: auto;
-    }
 }
 .active {
-    animation-duration: 2s;
-    animation-name: list;
-    animation-fill-mode: forwards;
+    transition: 1s;
 }
 .description-container_button:hover {
     color: blue;
@@ -451,7 +449,19 @@ display: flex;
         left: 0;
         z-index: 20;
         background-color: white;
+        height: 45px;
     }
+    .header-container_menu nav a {
+        width: 100%;
+        text-align: center
+    }
+    .header-container_menu nav a:hover {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .header-container_logo {
         position: absolute;
         left: 50%;
@@ -494,13 +504,26 @@ display: flex;
     .album-container_platform section {
         display: flex;
         align-items: center;
-        justify-content: center;
+        /*justify-content: center;*/
         flex-wrap: wrap;
     }
-    .album-container_platform section img {
+    .album-container_platform section a {
         width: 30%;
         padding: 10px;
     }
+    .album-container_platform section a img {
+     width: 100%;
+    }
+    /*.scroll-slide::after {*/
+    /*    content: "";*/
+    /*    background-image: url("../image/finger-tap.gif");*/
+    /*    position: absolute;*/
+    /*    top: 0;*/
+    /*    right: 0;*/
+    /*    left: 0;*/
+    /*    bottom: 0;*/
+    /*    background-repeat: round;*/
+    /*}*/
     .shop-container {
         margin: 30px auto;
         padding-bottom: 100px;
