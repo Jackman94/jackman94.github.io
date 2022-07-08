@@ -18,6 +18,6 @@
   "dependencies": {
     "hammer": "0.0.5",
     "hammerjs": "^2.0.8",
-    "moment": "^2.24.0"
+    "moment": "^2.29.4"
   }
 }
