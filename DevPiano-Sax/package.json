@@ -13,7 +13,7 @@
     "jshint": "^2.10.2",
     "jshint-loader": "^0.8.4",
     "webpack": "^4.36.1",
-    "webpack-cli": "^3.3.7"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "hammer": "0.0.5",
